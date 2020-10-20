@@ -73,6 +73,9 @@
 
 - (void)renderContent {
     [webview setAlpha: 0.0];
+    [webview setBackgroundColor:[UIColor clearColor]];
+    [webview.scrollView setBackgroundColor:[UIColor clearColor]];
+    [webview setOpaque: NO];
 
     if (![self isRequiredInputSet]) {
         return;
